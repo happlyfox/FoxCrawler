@@ -1,0 +1,14 @@
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\YouKuCrawler.exe.config
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\YouKuCrawler.exe
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\YouKuCrawler.pdb
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\HtmlAgilityPack.dll
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\HtmlAgilityPack.xml
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\obj\Debug\YouKuCrawler.csprojResolveAssemblyReference.cache
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\obj\Debug\YouKuCrawler.csproj.CoreCompileInputs.cache
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\obj\Debug\YouKuCrawler.exe
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\obj\Debug\YouKuCrawler.pdb
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\FSharp.Core.dll
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\ScrapySharp.Core.dll
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\ScrapySharpAsync.dll
+C:\Users\47470\Documents\Visual Studio 2017\Projects\YouKuCrawler\YouKuCrawler\bin\Debug\FSharp.Core.xml
