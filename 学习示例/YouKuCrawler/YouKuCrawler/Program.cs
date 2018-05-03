@@ -1,12 +1,11 @@
-﻿using HtmlAgilityPack;
-using ScrapySharp.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
 using System.Text;
-using System.Threading.Tasks;
+using HtmlAgilityPack;
+using ScrapySharp.Extensions;
 
 namespace YouKuCrawler
 {
@@ -20,9 +19,9 @@ namespace YouKuCrawler
         public List<string> videoType { get; set; }
     }
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             ///爬虫的制作主要分为三个方面
             ///1、加载网页结构
@@ -56,40 +55,37 @@ namespace YouKuCrawler
         }
 
 
-        private static string getJsonByObject(Object obj)
+        private static string getJsonByObject(object obj)
         {
             //实例化DataContractJsonSerializer对象，需要待序列化的对象类型
-            DataContractJsonSerializer serializer = new DataContractJsonSerializer(obj.GetType());
+            var serializer = new DataContractJsonSerializer(obj.GetType());
             //实例化一个内存流，用于存放序列化后的数据
-            MemoryStream stream = new MemoryStream();
+            var stream = new MemoryStream();
             //使用WriteObject序列化对象
             serializer.WriteObject(stream, obj);
             //写入内存流中
-            byte[] dataBytes = new byte[stream.Length];
+            var dataBytes = new byte[stream.Length];
             stream.Position = 0;
-            stream.Read(dataBytes, 0, (int)stream.Length);
+            stream.Read(dataBytes, 0, (int) stream.Length);
             //通过UTF8格式转换为字符串
             return Encoding.UTF8.GetString(dataBytes);
         }
 
         /// <summary>
-        /// 保存数据实体
+        ///     保存数据实体
         /// </summary>
         private static void SavaData()
         {
             var model = ParsingWebStructure();
             var path = "youku.txt";
 
-            if (!File.Exists(path))
-            {
-                File.Create(path);
-            }
+            if (!File.Exists(path)) File.Create(path);
 
             File.WriteAllText(path, getJsonByObject(model));
         }
 
         /// <summary>
-        /// 解析网页结构
+        ///     解析网页结构
         /// </summary>
         private static YouKu ParsingWebStructure()
         {
@@ -112,10 +108,11 @@ namespace YouKuCrawler
 
             Console.WriteLine($"id='{value}' 筛选结果:{resultCount}个");
             // 2、With LINQ	
-            var linqNodes = doc.DocumentNode.SelectSingleNode("//*[@id='filterPanel']/div[2]/ul").Descendants("li").ToList();
+            var linqNodes = doc.DocumentNode.SelectSingleNode("//*[@id='filterPanel']/div[2]/ul").Descendants("li")
+                .ToList();
 
             Console.WriteLine("电影产地:");
-            List<string> videoCountry = new List<string>();
+            var videoCountry = new List<string>();
             foreach (var node in linqNodes)
             {
                 videoCountry.Add(node.InnerText);
@@ -126,7 +123,7 @@ namespace YouKuCrawler
             var cssNodes = doc.DocumentNode.CssSelect("#filterPanel > div > label");
             Console.WriteLine();
 
-            List<string> videoType = new List<string>();
+            var videoType = new List<string>();
             foreach (var node in cssNodes)
             {
                 videoType.Add(node.InnerText);
@@ -134,7 +131,7 @@ namespace YouKuCrawler
             }
 
             //构造实体
-            YouKu model = new YouKu()
+            var model = new YouKu
             {
                 id = value,
                 videoNum = int.Parse(resultCount),
@@ -146,7 +143,7 @@ namespace YouKuCrawler
         }
 
         /// <summary>
-        /// 加载网页结构
+        ///     加载网页结构
         /// </summary>
         private static void LoadDocment()
         {

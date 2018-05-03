@@ -1,0 +1,17 @@
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\obj\Debug\YouKuCrawlerAsync.csproj.CoreCompileInputs.cache
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\YouKuCrawlerAsync.exe.config
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\YouKuCrawlerAsync.exe
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\YouKuCrawlerAsync.pdb
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\FSharp.Core.dll
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\HtmlAgilityPack.dll
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\ScrapySharp.Core.dll
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\ScrapySharpAsync.dll
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\FSharp.Core.xml
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\HtmlAgilityPack.pdb
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\HtmlAgilityPack.xml
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\obj\Debug\YouKuCrawlerAsync.csproj.CopyComplete
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\obj\Debug\YouKuCrawlerAsync.exe
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\obj\Debug\YouKuCrawlerAsync.pdb
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\Dapper.dll
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\bin\Debug\Dapper.xml
+D:\GitHub\FoxCrawler\学习示例\YouKuCrawler\YouKuCrawlerAsync\obj\Debug\YouKuCrawlerAsync.csprojResolveAssemblyReference.cache
