@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuCrawler", "YouKuCrawle
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuCrawlerAsync", "YouKuCrawlerAsync\YouKuCrawlerAsync.csproj", "{19242A20-1364-4C41-8FB8-442129BE6DA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuDotnetSpider2", "YouKuDotnetSpider2\YouKuDotnetSpider2.csproj", "{9A962BB0-A1F4-4BAB-8BD6-390073305A96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{19242A20-1364-4C41-8FB8-442129BE6DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19242A20-1364-4C41-8FB8-442129BE6DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19242A20-1364-4C41-8FB8-442129BE6DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A962BB0-A1F4-4BAB-8BD6-390073305A96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A962BB0-A1F4-4BAB-8BD6-390073305A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A962BB0-A1F4-4BAB-8BD6-390073305A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A962BB0-A1F4-4BAB-8BD6-390073305A96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
