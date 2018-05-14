@@ -7,3 +7,4 @@
 
 - YoukuCrawlerAsync [HtmlAgilityPack 爬取优酷电影名进阶（所有分类+多线程）](https://www.jianshu.com/p/01fe631482e7) 2018-05-03更新
 
+- YouKuDotnetSpider2 [爬虫框架Clawler 爬取优酷电影名](https://www.jianshu.com/p/fd07787e6b63)
