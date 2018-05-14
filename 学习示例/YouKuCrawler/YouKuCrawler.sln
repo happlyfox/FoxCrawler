@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuCrawlerAsync", "YouKuC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuDotnetSpider2", "YouKuDotnetSpider2\YouKuDotnetSpider2.csproj", "{9A962BB0-A1F4-4BAB-8BD6-390073305A96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuDotnetSpider2Async", "YouKuDotnetSpider2Async\YouKuDotnetSpider2Async.csproj", "{0EDBEEBB-DB08-42C6-9740-227C62373E88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9A962BB0-A1F4-4BAB-8BD6-390073305A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A962BB0-A1F4-4BAB-8BD6-390073305A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A962BB0-A1F4-4BAB-8BD6-390073305A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EDBEEBB-DB08-42C6-9740-227C62373E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDBEEBB-DB08-42C6-9740-227C62373E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDBEEBB-DB08-42C6-9740-227C62373E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDBEEBB-DB08-42C6-9740-227C62373E88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
