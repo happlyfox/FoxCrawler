@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C3CE626-F0C5-4BEF-9273-A45F0485ADCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fox.ClawerSN</RootNamespace>
+    <AssemblyName>Fox.ClawerSN</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="FSharp.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Core.4.0.0.1\lib\net40\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.8.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PanGu, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.Analysis.PanGu.2.4.1\lib\PanGu.dll</HintPath>
+    </Reference>
+    <Reference Include="PanGu.HighLight, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.Analysis.PanGu.2.4.1\lib\PanGu.HighLight.dll</HintPath>
+    </Reference>
+    <Reference Include="PanGu.Lucene.Analyzer, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lucene.Net.Analysis.PanGu.2.4.1\lib\PanGu.Lucene.Analyzer.dll</HintPath>
+    </Reference>
+    <Reference Include="ScrapySharp.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ScrapySharp.2.6.2\lib\net45\ScrapySharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ScrapySharpAsync, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ScrapySharp.2.6.2\lib\net45\ScrapySharpAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\CategoryDAL.cs" />
+    <Compile Include="DAL\CommodityDAL.cs" />
+    <Compile Include="DAL\DBInit.cs" />
+    <Compile Include="Default.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Default.Designer.cs">
+      <DependentUpon>Default.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extension\EnumExtension.cs" />
+    <Compile Include="LongTimeWork\CommodityIndexBuildWorker.cs" />
+    <Compile Include="Lucene\Interface\ILuceneAnalyze.cs" />
+    <Compile Include="Lucene\Interface\ILuceneBulid.cs" />
+    <Compile Include="Lucene\Interface\ILuceneQuery.cs" />
+    <Compile Include="Lucene\Service\LuceneAnalyze.cs" />
+    <Compile Include="Lucene\Service\LuceneBulid.cs" />
+    <Compile Include="Model\CategoryDG_Output.cs" />
+    <Compile Include="Model\LuceneShowOutput.cs" />
+    <Compile Include="Model\POCO\POCO_Category.cs" />
+    <Compile Include="Model\POCO\POCO_Commodity.cs" />
+    <Compile Include="Model\Priceobject.cs" />
+    <Compile Include="Model\CommodityGroupInput.cs" />
+    <Compile Include="Model\TableIndexModel.cs" />
+    <Compile Include="Processor\TableIndexProcessor.cs" />
+    <Compile Include="Service\CategoryService.cs" />
+    <Compile Include="Service\CommodityService.cs" />
+    <Compile Include="TaskForm\Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskForm\Commodity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm\Commodity.Designer.cs">
+      <DependentUpon>Commodity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskForm\LuceneBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm\LuceneBuild.Designer.cs">
+      <DependentUpon>LuceneBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskForm\LuceneSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskForm\LuceneSearch.Designer.cs">
+      <DependentUpon>LuceneSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\ClawerEnum.cs" />
+    <Compile Include="Util\FormHelper.cs" />
+    <Compile Include="LongTimeWork\CategoryUpdateWork.cs" />
+    <Compile Include="Util\HttpHelper.cs" />
+    <Compile Include="Util\PageHelper.cs" />
+    <Compile Include="Util\StaticConst.cs" />
+    <Compile Include="LongTimeWork\ValueEventArgs.cs" />
+    <Compile Include="Util\StopWatchHelper.cs" />
+    <Compile Include="WebAnalysis\CategoryAnalysis.cs" />
+    <Compile Include="WebAnalysis\CategoryPageAnalysis.cs" />
+    <Compile Include="WebAnalysis\CommodityAnalysis.cs" />
+    <EmbeddedResource Include="Default.resx">
+      <DependentUpon>Default.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskForm\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TaskForm\Commodity.resx">
+      <DependentUpon>Commodity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskForm\LuceneBuild.resx">
+      <DependentUpon>LuceneBuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskForm\LuceneSearch.resx">
+      <DependentUpon>LuceneSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
