@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuDotnetSpider2", "YouKu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouKuDotnetSpider2Async", "YouKuDotnetSpider2Async\YouKuDotnetSpider2Async.csproj", "{0EDBEEBB-DB08-42C6-9740-227C62373E88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{0351C968-BD76-4274-80F1-68720BED65B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0EDBEEBB-DB08-42C6-9740-227C62373E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EDBEEBB-DB08-42C6-9740-227C62373E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EDBEEBB-DB08-42C6-9740-227C62373E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0351C968-BD76-4274-80F1-68720BED65B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0351C968-BD76-4274-80F1-68720BED65B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0351C968-BD76-4274-80F1-68720BED65B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0351C968-BD76-4274-80F1-68720BED65B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
