@@ -13,3 +13,4 @@
 
 - Fox.ClawerSN [苏宁百万级商品爬取 思路讲解](https://www.jianshu.com/p/45c997980df0) 2018-07-11更新
 - JD.Product.Crawler 京东百万级商品爬取 思路讲解 代码已完成，文档未开始写
+- [定时从列表中爬今日通知信息，打包成windows服务](https://www.jianshu.com/p/b18ee789fded)
